@@ -1,0 +1,37 @@
+#footer .social-box ul {
+  list-style-type: none;
+}
+#footer .facebook a{
+  background: url(/img/facebook.png);
+  background-size: 100% auto;
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+#footer .linkedin a{
+  background: url(/img/linkedin.png);
+  background-size: 100% auto;
+  width: 24px;
+  height: 24px;
+  display: block;
+
+}
+#footer .instagram a{
+  background: url(/img/instagram.png);
+  background-size: 100% auto;
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+#footer #location {
+  background: white;
+  color: black;
+}
+#footer #location .base .londres {
+  font-size: 20px;
+}
+
+#footer #location .atendimento {
+  border-left: 1px solid black;
+}
