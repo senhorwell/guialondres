@@ -1,7 +1,8 @@
 <div id="contactus" class="container-fluid py-4">
     <div class="container d-flex">
         <div class="col-12 col-md-6 px-0 card p-4">
-            <form>
+            <form method="POST" action="{{ route('participe.enviar') }}" autocomplete="off">
+                @csrf
                 <div class="col-12 px-3 mb-4 input-group">
                     <input class="w-100 form-control" type="text" id="name" name="name" placeholder="Nome"/>
                 </div>

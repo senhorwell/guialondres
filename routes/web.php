@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('inicial');
 Route::get('/sport', function () {
     return view('sport');
 });
@@ -36,5 +36,8 @@ Route::get('/admin', function () {
 })->name('admin');
 
 Auth::routes();
+
+Route::post('/contato/enviar', 'App\Http\Controllers\EmailController@contatoEnviar')->name('contato.enviar');
+Route::post('/participe/enviar', 'App\Http\Controllers\EmailController@participeEnviar')->name('participe.enviar');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

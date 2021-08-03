@@ -36,6 +36,7 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    @if (Route::currentRouteName('home'))
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto ml-auto">
                         <li class="nav-item">
@@ -71,44 +72,24 @@
                         </li>
                         
                     </ul>
-
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
-                            @if (Route::currentRouteName('admin'))
-                                <!-- Authentication Links -->
-                                @guest
-                                    @if (Route::has('login'))
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                                        </li>
-                                    @endif
-
-                                    @if (Route::has('register'))
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                        </li>
-                                    @endif
-                                @else
-                                    <li class="nav-item dropdown">
-                                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                            {{ Auth::user()->name }}
-                                        </a>
-
-                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item" href="{{ route('logout') }}"
-                                            onclick="event.preventDefault();
-                                                            document.getElementById('logout-form').submit();">
-                                                {{ __('Logout') }}
-                                            </a>
-
-                                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                                @csrf
-                                            </form>
-                                        </div>
-                                    </li>
-                                @endguest
-                            @endif
+                    @else
+                    <!-- Left Side Of Navbar -->
+                    <ul class="navbar-nav mr-auto ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">{{ __('Sobre') }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contactus">{{ __('Contato') }}</a>
+                        </li>
+                        
+                        
                     </ul>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="ml-5 nav-item participe d-flex align-items-center justify-content-center">
+                            <a class="nav-link" href="#contactus">{{ __('Quero ser um patrocinador!') }}</a>
+                        </li>
+                    </ul>
+                    @endif
                 </div>
             </div>
         </nav>
