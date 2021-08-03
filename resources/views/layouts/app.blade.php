@@ -29,7 +29,7 @@
         <nav class="navbar navbar-expand-md navbar-light">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <img class="logo" src="{{ asset('/img/logo.PNG') }}"/>
+                    <img class="logo" src="{{ asset('/img/logo.png') }}"/>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -53,9 +53,23 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#hall">{{ __('Hall da Fama') }}</a>
                         </li>
-                        <li class="nav-item participe d-flex align-items-center justify-content-center">
+                        <!-- <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                <span class="label label-warning">Links</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item header"><a class="nav-link" href="/">Home</a></li>
+                                <li class="nav-item header"><a class="nav-link" href="/sport">Sport League</a></li>
+                                <li class="nav-item header"><a class="nav-link" href="/gospel">Gospel Music Awards</a></li>
+                                <li class="nav-item header"><a class="nav-link" href="/networking">Guia Londres Networking</a></li>
+                                <li class="nav-item header"><a class="nav-link" href="/women">Women Awards</a></li>
+                                <li class="nav-item header"><a class="nav-link" href="/business">Business Awards</a></li>
+                            </ul>
+                        </li> -->
+                        <li class="ml-5 nav-item participe d-flex align-items-center justify-content-center">
                             <a class="nav-link" href="#participe">{{ __('Participe Já') }}</a>
                         </li>
+                        
                     </ul>
 
                     <!-- Right Side Of Navbar -->

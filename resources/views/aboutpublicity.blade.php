@@ -9,7 +9,7 @@
                 <p>Premiamos mais de 600 empresas e pessoas até 2019 com inúmeros testemunhos de gratidão e resultados. Portanto hoje trabalhamos em 2 frentes, Guia Londres Publicity e Guia Londres awards.</p>
             </div>
             <div class="col-5">
-                <img class="awards" src="{{ asset('/img/awards.PNG') }}"/>
+                <img class="awards" src="{{ asset('/img/trofeu_guia.png') }}"/>
             </div>
         </div>
     </div>
