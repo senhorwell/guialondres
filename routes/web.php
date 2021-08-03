@@ -16,6 +16,21 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
+Route::get('/sport', function () {
+    return view('sport');
+});
+Route::get('/gospel', function () {
+    return view('gospel');
+});
+Route::get('/networking', function () {
+    return view('networking');
+});
+Route::get('/women', function () {
+    return view('women');
+});
+Route::get('/business', function () {
+    return view('business');
+});
 Route::get('/admin', function () {
     return view('home');
 })->name('admin');
