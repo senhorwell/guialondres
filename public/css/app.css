@@ -536,14 +536,91 @@ pre code {
   overflow-y: scroll;
 }
 
+#bannerHome .logo {
+  position: absolute;
+  top: 35%;
+  left: 15%;
+  width: 160px;
+}
+#bannerHome p {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 2.4rem;
+}
 #about .awards {
   height: 290px;
 }
 #awards {
-  background-image: url(/img/red-carpet.PNG);
+  background-image: url(/img/bg_awards.png);
   background-size: 100% 100% !important;
   height: 339px;
 }
+#awards ul {
+  list-style-type: none;
+}
+#awards ul li {
+  height: 190px;
+  margin: 0px 10px;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+#awards ul li a {
+  background-image: url(/img/bg_awards.png);
+  background-size: auto 100% !important;
+  background-position-x: center;
+  border-radius: 10px;
+  -webkit-filter: grayscale(100%);
+  filter: gray;
+}
+#awards ul li a.business {background-image: url(/img/bg_business_awards.png);}
+#awards ul li a.women {background-image: url(/img/bg_women_awards.png);}
+#awards ul li a.gospel {background-image: url(/img/bg_gospel.png);}
+#awards ul li a.networking {background-image: url(/img/bg_networking.png);}
+
+#awards ul li a:hover {
+    -webkit-filter: grayscale(0%);
+    filter: none;
+}
+#awards ul li a img {
+  width: 120px;
+}
+#contactus {
+  background-image: url(/img/bg_contact_us.png);
+  background-size: 100% 100% !important;
+}
+#aboutgospel {
+  background-color: #1c1c1c;
+}
+#aboutgospel button {
+  width: 180px;
+}
+#aboutgospel img {
+  width: 100px;
+}
+
+#aboutnetworking {
+  background-color: #1c1c1c;
+}
+#aboutnetworking button {
+  width: 180px;
+}
+#aboutnetworking img {
+  width: 100px;
+}
+
+#aboutsport {
+  background-color: #1c1c1c;
+}
+#aboutsport button {
+  width: 180px;
+}
+#aboutsport img {
+  width: 100px;
+}
+
 #testemunhos {
   background-color: #1c1c1c;
 }
@@ -4148,6 +4225,8 @@ input[type=button].btn-block {
   }
   .navbar-expand-md .navbar-nav .dropdown-menu {
     position: absolute;
+    background: black;
+    border: none;
   }
   .navbar-expand-md .navbar-nav .nav-link {
     padding-right: 0.5rem;
@@ -10053,4 +10132,26 @@ h3 {
     color: inherit;
     border-color: #dee2e6;
   }
+}
+#patrocinio ul {
+  list-style: none;
+}
+#patrocinio button {
+  width: 190px;
+}
+#patrocinio ul li a{
+  background-repeat: no-repeat !important;
+  background-size: 100% auto !important;
+  width: 150px;
+  height: 160px;
+  display: block;
+}
+#patrocinio .ouro a{
+  background: url(/img/patrocinio_ouro.png);
+}
+#patrocinio .premium a{
+  background: url(/img/patrocinio_premium.png);
+}
+#patrocinio .prata a{
+  background: url(/img/patrocino_prata.png);
 }
